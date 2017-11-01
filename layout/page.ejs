@@ -1,0 +1,54 @@
+<div class="post-bg" style="background-image: url(<% if (page.image){ %><%- page.image %><% }else{%><%- theme.img.default_thum %><% } %>);"></div>
+
+<div class="site-wrapper " page-type="c-page">
+
+<header class="main-header picbox post-head " style="background-image: url(<% if (page.image){ %><%- page.image %><% }else{%><%- theme.img.default_thum %><% } %>)">
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title"><%- page.title %></h1>
+            <h2 class="page-description"><%- page.description %></h2>
+        </div>
+
+    </div>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <section class="post-content">
+            <%- page.content %>
+        </section>
+
+        <footer class="post-footer">
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(<%- theme.img.avatar %>)"><span class="hidden">的头像</span></a>
+            </figure>
+
+
+
+            <section class="author">
+                <h4><a href=""></a></h4>
+
+                    <p><%- theme.info.description %></p>
+
+                    <p>继续阅读此作者的<a href="<%- theme.info.website %>">更多文章</a>。</p>
+
+                <div class="author-meta">
+                    <span class="author-location icon-location"><%- theme.info.location %></span>
+                    <span class="author-link icon-link"><a href="<%- theme.info.website %>"><%- theme.info.website %></a></span> 
+                </div>
+            </section>
+
+            <section class="share">
+                <h4>分享此博文</h4>
+                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+            </section>
+
+        </footer>
+    <div id="comment" class="comments"></div>
+    </article>
+</main>
+

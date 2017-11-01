@@ -1,0 +1,14 @@
+<div class="nav">
+<div class="nav_body">
+  <div class="b_logo"> 
+      <a class="blog-logo" href="<%- config.root %>"><img src="<%- theme.img.mini_logo %>" alt="<%= config.title %>" /></a>
+  </div>
+  <div class="b_class"> 
+    <ul>
+    	<% for (var i in theme.menu){ %>
+    	<li class="nav-"><a class="" n_type="" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a></li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+</div>

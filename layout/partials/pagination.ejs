@@ -1,0 +1,10 @@
+
+<nav class="pagination" role="navigation">
+    <% if (page.prev) { %>
+        <a class="newer-posts" href="<%- url_for(page.prev_link) %>">&larr; 上一页</a>
+    <% } %>
+    <span class="page-number">第 <%- page.current %> 页 &frasl; 共 <%- page.total %> 页</span>
+    <% if (page.next) { %>
+        <a class="older-posts" href="<%- url_for(page.next_link) %>">下一页 &rarr;</a>
+    <% } %>
+</nav>

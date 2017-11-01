@@ -1,0 +1,30 @@
+# Menu
+menu:
+    index: /
+    links: /links.html
+    archive: /archive.html
+    about: /about.html
+    rss: /rss.xml
+
+# SNS Menu
+sns:
+
+
+# site info
+info:
+    name: 1900
+    location: 自贡
+    website: http://www.4zen.top
+    description: 我叫1900，普通男青年，学过三年编程。湖南人，现在在四川工作。2015年花了26天骑过一次318。有点伪文艺，喜欢比较玄学的东西。性格多变，疑似有人格分裂。
+    email: trax.long@gmail.com
+
+# Images Settings
+img:
+    logo: "/img/logo.png"
+    mini_logo: "/img/logo-mini.png"
+    default_thum: "http://cdn.4zen.top/default.jpg"
+    avatar: "/img/avatar.png"
+    daily_pic: "/img/daily_pic.png"
+    sidebar_header: "/img/sidebar_header.png"
+    random_thumbnail: "/img/random/material-"
+    footer_image: 

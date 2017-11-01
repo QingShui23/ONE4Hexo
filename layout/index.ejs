@@ -1,0 +1,17 @@
+<% if ( path == 'index.html') { %>
+<div class="post-bg" style="background-image: url(<% if (page.posts.data[0].image){ %><%- page.posts.data[0].image %><% }else{%><%- theme.img.default_thum %><% } %>);"></div>
+
+<header class="home-header" to="#content"  data-offset="-55">
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title" to="#content"  data-offset="-55"><img src ="<%- config.root %>img/logo.png" alt="<%= config.title %>" /></h1>
+            <h2 class="page-description" to="#content"  data-offset="-55"><%- config.description %></h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-55" to="#content"><span class="hidden">下拉显示</span></a>
+</header>
+<% } %>
+
+    <%- partial('partials/index') %>
+</main>
+
